@@ -17,9 +17,11 @@
 		<pre><code>${application}.setItem('key','value');
 ${application}.setItem('key');
 ${application}.removeItem('key');</code></pre>
-		<button type="button" class="btn btn-primary" onclick="${application}.setItem('key',prompt('记录到${application}的值','value'))">${application}.setItem</button>
-		<button type="button" class="btn btn-primary" onclick="alert(${application}.getItem('key'))">${application}.getItem</button>
-		<button type="button" class="btn btn-primary" onclick="${application}.removeItem('key')">${application}.removeItem</button>
+		<div class="btn-toolbar">
+			<button type="button" class="btn btn-primary" onclick="${application}.setItem('key',prompt('记录到${application}的值','value'))">${application}.setItem</button>
+			<button type="button" class="btn btn-primary" onclick="alert(${application}.getItem('key'))">${application}.getItem</button>
+			<button type="button" class="btn btn-primary" onclick="${application}.removeItem('key')">${application}.removeItem</button>
+		</div>
 	</div>
 	<!--[if lte IE 7]>
 	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="${application}" width="0" height="0">

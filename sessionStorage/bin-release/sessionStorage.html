@@ -17,9 +17,11 @@
 		<pre><code>sessionStorage.setItem('key','value');
 sessionStorage.setItem('key');
 sessionStorage.removeItem('key');</code></pre>
-		<button type="button" class="btn btn-primary" onclick="sessionStorage.setItem('key',prompt('记录到sessionStorage的值','value'))">sessionStorage.setItem</button>
-		<button type="button" class="btn btn-primary" onclick="alert(sessionStorage.getItem('key'))">sessionStorage.getItem</button>
-		<button type="button" class="btn btn-primary" onclick="sessionStorage.removeItem('key')">sessionStorage.removeItem</button>
+		<div class="btn-toolbar">
+			<button type="button" class="btn btn-primary" onclick="sessionStorage.setItem('key',prompt('记录到sessionStorage的值','value'))">sessionStorage.setItem</button>
+			<button type="button" class="btn btn-primary" onclick="alert(sessionStorage.getItem('key'))">sessionStorage.getItem</button>
+			<button type="button" class="btn btn-primary" onclick="sessionStorage.removeItem('key')">sessionStorage.removeItem</button>
+		</div>
 	</div>
 	<!--[if lte IE 7]>
 	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="sessionStorage" width="0" height="0">

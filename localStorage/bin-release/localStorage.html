@@ -17,9 +17,11 @@
 		<pre><code>localStorage.setItem('key','value');
 localStorage.setItem('key');
 localStorage.removeItem('key');</code></pre>
-		<button type="button" class="btn btn-primary" onclick="localStorage.setItem('key',prompt('记录到localStorage的值','value'))">localStorage.setItem</button>
-		<button type="button" class="btn btn-primary" onclick="alert(localStorage.getItem('key'))">localStorage.getItem</button>
-		<button type="button" class="btn btn-primary" onclick="localStorage.removeItem('key')">localStorage.removeItem</button>
+		<div class="btn-toolbar">
+			<button type="button" class="btn btn-primary" onclick="localStorage.setItem('key',prompt('记录到localStorage的值','value'))">localStorage.setItem</button>
+			<button type="button" class="btn btn-primary" onclick="alert(localStorage.getItem('key'))">localStorage.getItem</button>
+			<button type="button" class="btn btn-primary" onclick="localStorage.removeItem('key')">localStorage.removeItem</button>
+		</div>
 	</div>
 	<!--[if lte IE 7]>
 	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="localStorage" width="0" height="0">
