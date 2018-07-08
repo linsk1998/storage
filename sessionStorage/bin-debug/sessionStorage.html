@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" http-equiv="charset" content="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit"/>
+	<title>Storage</title>
+	<link href="/linsk1998/ting/master/ting/ting-quirks.css" rel="stylesheet"/>
+	<link href="/linsk1998/ting/master/theme/bootstrap/indigo.css" rel="stylesheet"/>
+</head>
+
+<body scroll="no">
+	<div class="container-fluid">
+		<h3>sessionStorage</h3>
+		<p>只有在onload之后才能使用</p>
+		<pre><code>sessionStorage.setItem('key','value');
+sessionStorage.setItem('key');
+sessionStorage.removeItem('key');</code></pre>
+		<button type="button" class="btn btn-primary" onclick="sessionStorage.setItem('key',prompt('记录到sessionStorage的值','value'))">sessionStorage.setItem</button>
+		<button type="button" class="btn btn-primary" onclick="alert(sessionStorage.getItem('key'))">sessionStorage.getItem</button>
+		<button type="button" class="btn btn-primary" onclick="sessionStorage.removeItem('key')">sessionStorage.removeItem</button>
+	</div>
+	<!--[if lte IE 7]>
+	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="sessionStorage" width="0" height="0">
+		<param name="movie" value="sessionStorage.swf"/>
+		<param name="allowScriptAccess" value="always" />
+	</object>
+	<![endif]-->
+	<script>
+	window.onload=function(){
+		alert(sessionStorage.getItem('key'));
+	}
+	</script>
+</body>
+</html>
